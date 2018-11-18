@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{e8f22c31-90ab-4a3c-9e3e-a8f8c21477e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\memory">
+      <UniqueIdentifier>{c1c3957b-bf92-46af-90e0-ad6b124312a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\csgo">
+      <UniqueIdentifier>{ef1e1e34-c3dd-43a8-bf70-13dbe246530c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\math">
+      <UniqueIdentifier>{3b066dfa-3aef-477f-9122-9d802631cfb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\entity">
+      <UniqueIdentifier>{900a1e62-e623-4322-bc2e-9d58475ca2bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\weapon">
+      <UniqueIdentifier>{c5680b1b-28d7-4f4c-8b7d-f2a95ac5b9bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\utils">
+      <UniqueIdentifier>{1f5781e9-c7ce-481b-8dec-6d46e998c588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features">
+      <UniqueIdentifier>{7090b01a-9173-42b1-9317-1491d35a85cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\visuals">
+      <UniqueIdentifier>{4bfe611c-25ba-4695-a1aa-2a5467135841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\settings">
+      <UniqueIdentifier>{27a6912d-1f69-4070-b060-4aadd03ad78e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdk\iniparser">
+      <UniqueIdentifier>{21ff9de4-56bb-4318-83c8-3700e1914dda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\aimbot">
+      <UniqueIdentifier>{8a724504-3e7a-40d1-971e-56cc9d95256b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\triggerbot">
+      <UniqueIdentifier>{926fb527-6135-42f7-8b24-aacbc7733a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="features\misc">
+      <UniqueIdentifier>{30851806-87ab-4bf4-ab6b-05dbfffc8865}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sdk\memory\memory.h">
+      <Filter>sdk\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\sdk.h">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\csgo\engine.h">
+      <Filter>sdk\csgo</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\math\vector.h">
+      <Filter>sdk\math</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\csgo\client.h">
+      <Filter>sdk\csgo</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\entity\entity.h">
+      <Filter>sdk\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\weapon\weapon.h">
+      <Filter>sdk\weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\utils\utils.h">
+      <Filter>sdk\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="features\visuals\glow.h">
+      <Filter>features\visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\settings\settings.h">
+      <Filter>sdk\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\iniparser\iniparser.h">
+      <Filter>sdk\iniparser</Filter>
+    </ClInclude>
+    <ClInclude Include="features\misc\noflash.h">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="features\misc\radarhack.h">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="features\misc\autopistol.h">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="features\misc\slowaim.h">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="features\misc\fovchanger.h">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="features\misc\rankreveal.h">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="features\misc\clantag.h">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="features\aimbot\aimbot.h">
+      <Filter>features\aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\math\math.h">
+      <Filter>sdk\math</Filter>
+    </ClInclude>
+    <ClInclude Include="features\triggerbot\triggerbot.h">
+      <Filter>features\triggerbot</Filter>
+    </ClInclude>
+    <ClInclude Include="features\visuals\chams.h">
+      <Filter>features\visuals</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sdk\memory\memory.cpp">
+      <Filter>sdk\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\sdk.cpp">
+      <Filter>sdk</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="sdk\csgo\client.cpp">
+      <Filter>sdk\csgo</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\csgo\engine.cpp">
+      <Filter>sdk\csgo</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\entity\entity.cpp">
+      <Filter>sdk\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\weapon\weapon.cpp">
+      <Filter>sdk\weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\utils\utils.cpp">
+      <Filter>sdk\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="features\visuals\glow.cpp">
+      <Filter>features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\settings\settings.cpp">
+      <Filter>sdk\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\iniparser\iniparser.cpp">
+      <Filter>sdk\iniparser</Filter>
+    </ClCompile>
+    <ClCompile Include="features\misc\noflash.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="features\misc\radarhack.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="features\misc\autopistol.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="features\misc\slowaim.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="features\misc\fovchanger.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="features\misc\rankreveal.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="features\misc\clantag.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="features\triggerbot\triggerbot.cpp">
+      <Filter>features\triggerbot</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\math\math.cpp">
+      <Filter>sdk\math</Filter>
+    </ClCompile>
+    <ClCompile Include="features\aimbot\aimbot.cpp">
+      <Filter>features\aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="features\visuals\chams.cpp">
+      <Filter>features\visuals</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>
