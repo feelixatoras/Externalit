@@ -2,13 +2,10 @@
 #include "../../sdk/sdk.h"
 namespace features {
 	namespace misc {
-		class cslowaim {
+		class cfakelag {
 		public:
-			cslowaim();
+			cfakelag() = default;
 			void think();
-		private:
-			bool init;
-			float old_sens;
-		}; extern cslowaim* c_slowaim;
+		}; extern cfakelag* c_fakelag;
 	}
 }

@@ -12,6 +12,7 @@ namespace sdk {
 			const char* get_mapdir();
 			const char* get_mapname();
 			const char* get_gamedir();
+			void full_update();
 		}; extern cengine* c_engine;
 	};
 }

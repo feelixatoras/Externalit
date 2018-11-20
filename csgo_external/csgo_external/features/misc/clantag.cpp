@@ -14,7 +14,7 @@ namespace features {
 				"\xC3"                    
 				"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00"; 
 
-			auto clan_tag = settings_t.misc.clan_tag_animate ? c_utils->animate_string(settings_t.misc.clan_tag) : settings_t.misc.clan_tag;
+			auto clan_tag = settings_t.misc.clan_tag_animate ? c_utils->animate_string(settings_t.misc.clan_tag_string) : settings_t.misc.clan_tag_string;
 
 
 			constexpr auto shellcode_size = sizeof(shellcode);

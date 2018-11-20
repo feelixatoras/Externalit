@@ -24,5 +24,8 @@ namespace sdk {
 			static auto game = c_memory->read<std::array<char, 0x120>>(enginedll + dwGameDir);
 			return game.data();
 		}
+		void cengine::full_update() {
+			c_memory->write<int>(client_state() + 0x174, -1);
+		}
 	}
 }

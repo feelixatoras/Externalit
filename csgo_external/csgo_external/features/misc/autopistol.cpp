@@ -6,7 +6,7 @@ namespace features {
 		cautopistol* c_autopistol = new cautopistol();
 		void cautopistol::think() {
 			if (GetAsyncKeyState(1))
-				if (globals::weapon->autowpn())
+				if (globals::weapon->is_auto())
 					c_memory->write(clientdll + dwForceAttack, 6);
 		}
 	}

@@ -3,13 +3,13 @@ namespace sdk {
 	using namespace offys;
 	cweapon::cweapon(uint32_t weap) : weap(weap) {
 	}
-	cweapon cweapon::getweapon(int i) {
+	cweapon cweapon::get_weapon(int i) {
 		return cweapon(c_memory->read<uint32_t>(clientdll + dwEntityList + ((i & 0xFFF) - 1) * 0x10));
 	}
 	short cweapon::id() {
 		return c_memory->read<short>(weap + m_iItemDefinitionIndex);
 	}
-	bool cweapon::abwpn() {
+	bool cweapon::is_ab() {
 		switch (id()) {
 		case 1:
 		case 2:
@@ -53,7 +53,7 @@ namespace sdk {
 
 		}
 	}
-	bool cweapon::rcswpn() {
+	bool cweapon::is_rcs() {
 		switch (id()) {
 		case 7:
 		case 8:
@@ -79,10 +79,13 @@ namespace sdk {
 
 		}
 	}
-	int cweapon::zoomlvl() {
+	int cweapon::get_zoomlevel() {
 		return c_memory->read<int>(weap + m_zoomLevel);
 	}
-	bool cweapon::autowpn() {
+	int cweapon::get_xuid() {
+		return c_memory->read<int>(weap + m_OriginalOwnerXuidLow);
+	}
+	bool cweapon::is_auto() {
 		switch (id()) {
 		case 1:
 		case 2:

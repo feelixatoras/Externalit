@@ -52,9 +52,12 @@
 #include "../features//misc/noflash.h"
 #include "../features//misc/radarhack.h"
 #include "../features//misc/rankreveal.h"
+#include "../features/misc/bunnyhop.h"
+#include "../features/misc/fakelag.h"
 #include "../features//misc/slowaim.h"
 #include "../features//visuals/chams.h"
 #include "../features//visuals/glow.h"
+#include "../features/skinchanger/skinchanger.h"
 
 namespace sdk {
 

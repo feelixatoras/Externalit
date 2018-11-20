@@ -20,6 +20,7 @@ namespace sdk {
 		vec3 get_bone_position(int i);
 		vec3 get_vec_offset();
 		int get_fov();
+		float get_velocity();
 		bool is_scoped();
 		vec3 get_vec_origin();
 		std::auto_ptr<cweapon> get_weapon();

@@ -11,6 +11,7 @@ namespace sdk {
 	struct settings {
 		bool aimbot;
 		bool triggerbot;
+		bool skinchanger;
 		struct{
 			bool glow_esp;
 			bool glow_team;
@@ -56,7 +57,8 @@ namespace sdk {
 			bool fov_changer;
 			int fov_changer_amout;
 			bool rank_reveal;
-			std::string clan_tag;
+			bool clan_tag;
+			std::string clan_tag_string;
 			bool clan_tag_animate;
 		}misc;
 	}; extern settings settings_t;
@@ -104,5 +106,12 @@ namespace sdk {
 		int triggerbot2_sleep_min = 1;
 		int triggerbot2_sleep_max = 2;
 		bool triggerbot_team = false;
+
+		bool skinchanger = true;
+		int skinchanger_skin = 707;
+		int skinchanger_seed = 2313;
+		float skinchanger_wear = 0.99f;
+		int skinchanger_stattrak = 1337;
+		std::string skinchanger_nametag = "Lumine.Club";
 	}; extern weapon wpn_t[64];
 }

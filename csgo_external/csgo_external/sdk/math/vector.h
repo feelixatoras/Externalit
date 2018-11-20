@@ -121,7 +121,7 @@ public:
 	vec3 Normalized() const
 	{
 		vec3 res = *this;
-		float l = res.Length();
+		float l = res.length();
 		if (l != 0.0f) {
 			res /= l;
 		}
@@ -148,7 +148,7 @@ public:
 		delta.y = y - vOther.y;
 		delta.z = z - vOther.z;
 
-		return delta.Length();
+		return delta.length();
 	}
 	float DistToSqr(const vec3 &vOther) const
 	{
@@ -164,7 +164,7 @@ public:
 	{
 		return (x*vOther.x + y * vOther.y + z * vOther.z);
 	}
-	float Length() const
+	float length() const
 	{
 		return sqrt(x*x + y * y + z * z);
 	}

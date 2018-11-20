@@ -37,7 +37,7 @@ namespace features {
 			}
 		}
 		void caimbot::think() {
-			if (globals::weapon->abwpn()) {
+			if (globals::weapon->is_ab()) {
 				auto target = csgo::c_client->get_entity(best_target);
 				//if (!valid_target(target))
 				//	best_target = -1;

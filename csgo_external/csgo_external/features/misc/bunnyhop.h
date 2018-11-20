@@ -2,13 +2,10 @@
 #include "../../sdk/sdk.h"
 namespace features {
 	namespace misc {
-		class cslowaim {
+		class cbunnyhop {
 		public:
-			cslowaim();
+			cbunnyhop() = default;
 			void think();
-		private:
-			bool init;
-			float old_sens;
-		}; extern cslowaim* c_slowaim;
+		}; extern cbunnyhop* c_bunnyhop;
 	}
 }

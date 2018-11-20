@@ -8,6 +8,6 @@ namespace features {
 			void think();
 		private:
 			bool first;
-		}; extern ctriggerbot* c_ctriggerbot;
+		}; extern ctriggerbot* c_triggerbot;
 	}
 }

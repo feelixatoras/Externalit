@@ -72,5 +72,8 @@ namespace sdk {
 	float centity::get_flash_alpha() {
 		return c_memory->read<float>(ent + m_flFlashMaxAlpha);
 	}
+	float centity::get_velocity() {
+		return c_memory->read<vec3>(ent + m_vecVelocity).length();
+	}
 	
 }

@@ -47,6 +47,9 @@
     <Filter Include="features\misc">
       <UniqueIdentifier>{30851806-87ab-4bf4-ab6b-05dbfffc8865}</UniqueIdentifier>
     </Filter>
+    <Filter Include="features\skinchanger">
+      <UniqueIdentifier>{a219bfa0-4f0d-4828-8504-e807cc1e2556}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sdk\memory\memory.h">
@@ -115,6 +118,15 @@
     <ClInclude Include="features\visuals\chams.h">
       <Filter>features\visuals</Filter>
     </ClInclude>
+    <ClInclude Include="features\misc\fakelag.h">
+      <Filter>features\misc</Filter>
+    </ClInclude>
+    <ClInclude Include="features\skinchanger\skinchanger.h">
+      <Filter>features\skinchanger</Filter>
+    </ClInclude>
+    <ClInclude Include="features\misc\bunnyhop.h">
+      <Filter>features\misc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sdk\memory\memory.cpp">
@@ -180,6 +192,15 @@
     </ClCompile>
     <ClCompile Include="features\visuals\chams.cpp">
       <Filter>features\visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="features\misc\fakelag.cpp">
+      <Filter>features\misc</Filter>
+    </ClCompile>
+    <ClCompile Include="features\skinchanger\skinchanger.cpp">
+      <Filter>features\skinchanger</Filter>
+    </ClCompile>
+    <ClCompile Include="features\misc\bunnyhop.cpp">
+      <Filter>features\misc</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -154,12 +154,15 @@
   <ItemGroup>
     <ClInclude Include="features\aimbot\aimbot.h" />
     <ClInclude Include="features\misc\autopistol.h" />
+    <ClInclude Include="features\misc\bunnyhop.h" />
     <ClInclude Include="features\misc\clantag.h" />
+    <ClInclude Include="features\misc\fakelag.h" />
     <ClInclude Include="features\misc\fovchanger.h" />
     <ClInclude Include="features\misc\noflash.h" />
     <ClInclude Include="features\misc\radarhack.h" />
     <ClInclude Include="features\misc\rankreveal.h" />
     <ClInclude Include="features\misc\slowaim.h" />
+    <ClInclude Include="features\skinchanger\skinchanger.h" />
     <ClInclude Include="features\triggerbot\triggerbot.h" />
     <ClInclude Include="features\visuals\chams.h" />
     <ClInclude Include="features\visuals\glow.h" />
@@ -178,12 +181,15 @@
   <ItemGroup>
     <ClCompile Include="features\aimbot\aimbot.cpp" />
     <ClCompile Include="features\misc\autopistol.cpp" />
+    <ClCompile Include="features\misc\bunnyhop.cpp" />
     <ClCompile Include="features\misc\clantag.cpp" />
+    <ClCompile Include="features\misc\fakelag.cpp" />
     <ClCompile Include="features\misc\fovchanger.cpp" />
     <ClCompile Include="features\misc\noflash.cpp" />
     <ClCompile Include="features\misc\radarhack.cpp" />
     <ClCompile Include="features\misc\rankreveal.cpp" />
     <ClCompile Include="features\misc\slowaim.cpp" />
+    <ClCompile Include="features\skinchanger\skinchanger.cpp" />
     <ClCompile Include="features\triggerbot\triggerbot.cpp" />
     <ClCompile Include="features\visuals\chams.cpp" />
     <ClCompile Include="features\visuals\glow.cpp" />
