@@ -42,8 +42,8 @@ namespace sdk {
 	class cmemory {
 	private:
 		HMODULE ntdll;
-		NtRVM NtReadVirtualMemory;
-		NtWVM NtWriteVirtualMemory;
+		NtRVM ntreadvirtualmemory;
+		NtWVM ntwritevirtualmemory;
 		NtOP NtOpenProcess;
 		HANDLE hprocess;
 		uint32_t processid;
@@ -55,16 +55,16 @@ namespace sdk {
 		T read(DWORD address)
 		{
 			T ret;
-			NtReadVirtualMemory(hprocess, reinterpret_cast<LPVOID>(address), &ret, sizeof(T), NULL);
+			ntreadvirtualmemory(hprocess, reinterpret_cast<LPVOID>(address), &ret, sizeof(T), NULL);
 			return ret;
 		}
 		template <class T>
 		void write(DWORD address, T buffer)
 		{
-			NtWriteVirtualMemory(hprocess, reinterpret_cast<LPVOID>(address), &buffer, sizeof(T), NULL);
+			ntwritevirtualmemory(hprocess, reinterpret_cast<LPVOID>(address), &buffer, sizeof(T), NULL);
 		}
 		void write(DWORD address, void* buffer, size_t size) {
-			NtWriteVirtualMemory(hprocess, reinterpret_cast<LPVOID>(address), &buffer, size, NULL);
+			ntwritevirtualmemory(hprocess, reinterpret_cast<LPVOID>(address), &buffer, size, NULL);
 		}
 		template<class T>
 		void write_prot(DWORD address, T buffer)
