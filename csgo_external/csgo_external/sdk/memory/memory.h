@@ -42,8 +42,8 @@ namespace sdk {
 	class cmemory {
 	private:
 		HMODULE ntdll;
-		NtRVM ntreadvirtualmemory;
-		NtWVM ntwritevirtualmemory;
+		NtRVM NtReadVirtualMemory;
+		NtWVM NtWriteVirtualMemory;
 		NtOP NtOpenProcess;
 		HANDLE hprocess;
 		uint32_t processid;
