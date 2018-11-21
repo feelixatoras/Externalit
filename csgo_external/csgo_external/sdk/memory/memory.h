@@ -55,16 +55,16 @@ namespace sdk {
 		T read(DWORD address)
 		{
 			T ret;
-			ntreadvirtualmemory(hprocess, reinterpret_cast<LPVOID>(address), &ret, sizeof(T), NULL);
+			NtReadVirtualMemory(hprocess, reinterpret_cast<LPVOID>(address), &ret, sizeof(T), NULL);
 			return ret;
 		}
 		template <class T>
 		void write(DWORD address, T buffer)
 		{
-			ntwritevirtualmemory(hprocess, reinterpret_cast<LPVOID>(address), &buffer, sizeof(T), NULL);
+			NtWriteVirtualMemory(hprocess, reinterpret_cast<LPVOID>(address), &buffer, sizeof(T), NULL);
 		}
 		void write(DWORD address, void* buffer, size_t size) {
-			ntwritevirtualmemory(hprocess, reinterpret_cast<LPVOID>(address), &buffer, size, NULL);
+			NtWriteVirtualMemory(hprocess, reinterpret_cast<LPVOID>(address), &buffer, size, NULL);
 		}
 		template<class T>
 		void write_prot(DWORD address, T buffer)
