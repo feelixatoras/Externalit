@@ -6,6 +6,8 @@ namespace sdk {
 	namespace offys {
 		uint32_t clientdll;
 		uint32_t enginedll;
+		uint32_t m_bDormant = 0xE9;
+		uint32_t m_zoomLevel = 0x3330;
 		uint32_t m_dwRankRevealAllFn = 0x0;
 		uint32_t m_ArmorValue = 0xB324;
 		uint32_t m_Collision = 0x31C;
